@@ -1,0 +1,111 @@
+ body {
+            height: 80%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7ad67e; /* Verde Claro */
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #000000; /* Preto */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            width: 100%;
+        }
+
+        #sobre, #formacao, #portfolio, #contato {
+            border: 1px solid #d3d3d3; /* Cinza Claro */
+            background-color: #dfeee4; /* Verde Claro Fosco */
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        #sobre {
+            text-align: center;
+        }
+
+        #sobreConteudo {
+            display: inline-block;
+            width: 60%;
+            vertical-align: center;
+        }
+
+        #sectionSobreImg {
+            display: inline-block;
+            width: 20%;
+        }
+
+        #imgSobre {
+            align-self: center;
+            border-radius: 50%;
+            width: 60%;
+            border-style:dashed;
+            border-color: #000000;
+        }
+
+        #formacao {
+            text-align: center;
+        }
+
+        #portfolio {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #127c18; /* Verde Escuro */
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        input {
+            margin: 1%;
+            padding: 1%;
+        }
+        
+        textarea {
+            margin: 1%;
+            height: 50px;
+        }
+        
+        #inpNome, #inpEmail, #inpMsg {
+            width: 35%;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #66d66b;
+        }
+
+        footer {
+            background-color: #7ad67e; /* Verde Claro */
+            padding: 3px;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+        }
