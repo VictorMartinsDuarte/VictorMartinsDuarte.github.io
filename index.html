@@ -1,54 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfólio: Victor Martins</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Victor Martins</title>
+    <style>
+        body {
+            height: 80%;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+        header {
+            background-color: #7ad67e; /* Verde Claro */
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+        }
 
-    </head>
-    <body>
+        nav a {
+            margin: 0 15px;
+            color: #000000; /* Preto */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            width: 100%;
+        }
+
+        #sobre, #formacao, #portfolio, #contato {
+            border: 1px solid #d3d3d3; /* Cinza Claro */
+            background-color: #dfeee4; /* Verde Claro Fosco */
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        #sobre {
+            text-align: center;
+        }
+
+        #sobreConteudo {
+            display: inline-block;
+            width: 60%;
+            vertical-align: center;
+        }
+
+        #sectionSobreImg {
+            display: inline-block;
+            width: 20%;
+        }
+
+        #imgSobre {
+            align-self: center;
+            border-radius: 50%;
+            width: 60%;
+            border-style:dashed;
+            border-color: #000000;
+        }
+
+        #formacao {
+            text-align: center;
+        }
+
+        #portfolio {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #127c18; /* Verde Escuro */
+        }
         
-
-    <H1 class="titulos">Portfólio</H1>
-
-    <H1>Portfólio</H1>
-
-        <h2 class="titulos">Victor Francisco Martins Duarte</h2>
-            <img id="eu" src="" alt="Foto atual de Victor Martins">
-
+        p {
+            text-align: center;
+        }
         
-            <p>Breve descrição sobre mim</p>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        input {
+            margin: 1%;
+            padding: 1%;
+        }
+        
+        textarea {
+            margin: 1%;
+            height: 50px;
+        }
+        
+        #inpNome, #inpEmail, #inpMsg {
+            width: 35%;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #66d66b;
+        }
 
-            <h2>Índice</h2>
-            <ul>
-                <li><a href="#resumo">Quem sou eu?</a></lis>
-                <li><a href="#">Minhas habilidade</a></lis>
-                <li><a href="#">Blog que eu gosto</a></lis>  
-            </ul>
+        footer {
+            background-color: #7ad67e; /* Verde Claro */
+            padding: 3px;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> <!-- Menu de navegação da página -->
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#formacao">Formação e Idiomas</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-            <p id="resumo">Breve descrição sobre mim</p>
+    <main>
+        <section id="sobre">
+            <section id="sobreConteudo">
+                <h2>Sobre Mim</h2>
+                <p>Olá, me chamo Victor. <br>
+                    Tenho 31 anos e moro em Porto Alegre. <br>
+                    Desde cedo gosto de tecnologia, e após a Junior Achievement no meu ensino médio eu desenvolvi interesse por finanças e empreendedorismo. <br>
+                    Como hobby gosto de sair com amigos, ir ao cinema, cozinhar e jogar.
+                </p>
+            </section>
+            <section id="sectionSobreImg">
+                <img 
+                    id="imgSobre" 
+                    src="victor_martins.png"
+                >
+            </section>
+        </section>
 
-            <ul>
-                <li>Nacionalidade: Brasileira</li>
-                <li>Cidade: Porto Alegre</li>
-                <li>Estado: Rio Grande do Sul</li>
-            </ul>
-    
-        <h2 class="titulos">Habilidades</h2>    
-            <ol>
-                <li><strong>Racionalidade</strong></li>
-                <li>Empatia</li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
+        <section id="formacao">
+            <section id="formacaoConteudo">
+                <h2>Formação e Idiomas</h2>
+                <p id="formacaoP">
+                    <b>Cursos:</b> <br>
+                    1. Trybe - Desenvolvimento web. <br>
+                    2. Gestão de Projetos (Google) <br>
 
-        <h3 class="titulos">Quem sou eu?</h3>    
-            <a href="#eu">Clique aqui e descubra!</a>
-    
-        <h3 class="titulos">Um blog que eu gosto!</h3>
-            <a href="blog" target="_blank">Nome-do-blog</a>
+                    <b>Superior:</b> <br>
+                    Cursando Engenharia de Software <br>
 
-    </body>
+                    <b>Experiência:</b> <br>
+                    Trabalhei na área administrativa, como fiscal na área de contabilidade, <br>
+                    e atualmente como estagiário em desenvolvimento de software ABAP no Grupo Zaffari. <br>
+
+                    <b>Idiomas:</b> <br> 
+                    Inglês - Intermediário
+                </p>
+            </section>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Links para meus projetos.</p>
+            <nav id="portfolioNav">
+                <a href="https://github.com/VictorMartinsDuarte">Github</a>
+                <a href="https://github.com/VictorMartinsDuarte/trybers-and-dragons">Trybers and Dragons</a>
+                <a href="https://github.com/VictorMartinsDuarte/car-shop">Car Shop</a>
+                <a href="https://github.com/VictorMartinsDuarte/star-wars-planets-search">Star Wars Planets Search</a>
+                <a href="https://github.com/VictorMartinsDuarte/trybe-futebol-clube">Trybe Futebol Clube</a>
+                <a href="https://github.com/VictorMartinsDuarte/blogs-api">Blogs Api</a>
+            </nav>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="inpNome">Nome:</label>
+                <input id="inpNome" type="text" placeholder="Digite seu nome"></input>
+                <label for="inpEmail">E-mail:</label>
+                <input id="inpEmail" type="text" placeholder="Preencha seu e-mail"></input>
+                <label for="inpMsg">Mensagem:</label>
+                <textarea id="inpMsg" placeholder="Escreva sua mensagem"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Criado por Victor Martins.</p>
+    </footer>
+</body>
 </html>
